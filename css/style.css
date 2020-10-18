@@ -19,14 +19,18 @@
 } */
 
 /* body {
-    /* background: linear-gradient(to top right, #0066eb 0%, #ff8ab3 100%); 
-    display: block;
+     background: linear-gradient(to top right, #0066eb 0%, #ff8ab3 100%); 
+    display: block; 
+    width: 100%;
+    min-width: 100vh;
+    background: radial-gradient(#a7b4ff, #303b7a);
+
+    position: relative;
 }
 
 html {
     min-height: 100%;
-} 
-*/
+}  */
 
 /* @media screen and (max-width: 900px) {
    .all {
@@ -42,19 +46,34 @@ html {
     }
 } */
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .kal {
     margin-top: 20000px;
 }
 
 .trys {
+    color: black;
     animation: anim 1.5s ease;
     font-family: OpenSansSemiBold;
-    display: flex;
+    display: inline;
     justify-content: center;
     position: relative;
     z-index: 1;
     animation-name: rotation;
-    font-size: 30px;
+    font-size: 50px;
+    transition-property: color;
+    transition: 1s;
+    
+}
+
+.trys:hover {
+    color: rgb(255, 255, 255);
+    transition: 1s;
 }
 
 @keyframes rotation {
@@ -67,8 +86,13 @@ html {
 }
 .container {
     position: relative;
-    z-index: 0;
+    z-index: 1;
     display: flex; 
+    justify-content: center;
+}
+
+.trabl {
+    display: flex;
     justify-content: center;
 }
 
@@ -116,12 +140,16 @@ html {
     ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 0px;
     border-radius: 0px;
-    background-color:#77aae4;
+    background-color:#608bbd;
     }
     
-    ::-webkit-scrollbar-thumb:hover{
-    background-color:#75c7e0;
+    ::-webkit-scrollbar-thumb:hover {
+    background-color:#78a7dd;
     }
+
+    ::-webkit-scrollbar-thumb:active {
+        background-color: rgb(255, 255, 255);
+        }
     
     ::-webkit-resizer{
     background-image:url('');
@@ -141,12 +169,12 @@ html {
         top: 0px;
         position: fixed;
       background: linear-gradient(45deg, #9560b4,  #4c6ba0);
-      background-size: 250% 100%;
+      background-size: 170% 100%;
       
       -webkit-animation: anim 1s ease infinite;
       -z-animation: anim 1s ease infinite;
       -o-animation: anim 1s ease infinite;
-        animation: anim 10s cubic-bezier(0.5, 0.5, 0.75, 1) infinite;
+        animation: anim 5s cubic-bezier(0.5, 0.5, 0.75, 1) infinite;
     }
       
       @-webkit-keyframes anim {

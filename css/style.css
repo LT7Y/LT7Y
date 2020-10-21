@@ -58,40 +58,6 @@ h1, h2, h3, h4, h5, h6 {font-size:inherit; font-weight: 400}
     }
 
 
-/* @media screen and (max-width: 900px) {
-    body {
-        background: rgb(71, 94, 170);
-    }
-} */
-
-/* body {
-     background: linear-gradient(to top right, #0066eb 0%, #ff8ab3 100%); 
-    display: block; 
-    width: 100%;
-    min-width: 100vh;
-    background: radial-gradient(#a7b4ff, #303b7a);
-
-    position: relative;
-}
-
-html {
-    min-height: 100%;
-}  */
-
-/* @media screen and (max-width: 900px) {
-   .all {
-     width: 800px;
-     grid-gap: 300px;
-    }
-  }
-
-@media screen and (max-width: 500px) {
-    .trys {
-        left: 150px;
-        top: 200px;
-    }
-} */
-
 .kal {
     margin-top: 20000px;
 }

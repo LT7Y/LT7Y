@@ -5,21 +5,32 @@
     font-style: normal;
     }
 
-@font-face {
-        font-family: "OpenSansSemiBold";
-        src: url("../fonts/OpenSans-Semibold.ttf");
-        font-weight: normal;
-        font-style: bold;
-    }
-
-.kal {
-    margin-top: 20000px;
+.text_one {
+    font-size: 30px;
+    padding-top: 90px;
+    font-family: OpenSansRegular;
 }
 
+.pad {
+    cursor: pointer;
+    color: #000;
+    margin-top: 20000px;
+    display: inline-block;
+    position: relative;
+}
+
+.pad:active, .pad:hover {
+    color: rgb(255, 255, 255);
+}
+
+.trabl {
+    display: flex;
+    justify-content: center;
+}
 
 .trys {
     color: black;
-    animation: anim 1.5s ease;
+    animation: 1.5s ease;
     font-family: OpenSansRegular;
     display: inline;
     justify-content: center;
@@ -27,33 +38,26 @@
     z-index: 1;
     animation-name: rotation;
     font-size: 50px;
-    transition-property: color;
-    transition: 1s;
-    
+
+    transition: color 1s;
+    text-align: center;
 }
 
 .trys:hover {
-    color: rgb(255, 255, 255);
+    color: #8bf1ff;
     transition: 1s;
     cursor: default;
 }
 
 @keyframes rotation {
-    0% {
-        transform:rotate(0deg);
-    }
     100% {
-        transform:rotate(360deg);
+            transform:rotate(360deg);
+        }
     }
-}
-.container {
-    position: relative;
-    display: flex; 
-    justify-content: center;
-}
 
-.trabl {
-    display: flex;
-    justify-content: center;
-}
+@media screen and (max-width: 510px) {
+    .trys {
+      font-size: 40px;
+    }
+  }
 

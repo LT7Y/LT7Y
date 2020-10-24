@@ -38,6 +38,10 @@ img {vertical-align: top}
 
 h1, h2, h3, h4, h5, h6 {font-size:inherit; font-weight: 400}
 
+*::selection {
+    color: rgb(255, 255, 146);
+    background-color: rgba(41, 42, 53, 0.5)
+}
     
     ::-webkit-scrollbar-track {
     background-color:#49538a;
@@ -64,13 +68,14 @@ h1, h2, h3, h4, h5, h6 {font-size:inherit; font-weight: 400}
 
 .backr { 
         height: 100%;
-        width: 100%;
-        left: 0%;
+        width: 400%;
+        left: -300%;
         top: 0px;
         position: fixed;
         z-index: -1;
-      background: linear-gradient(45deg, #af7ecc,  rgb(106, 131, 214));
-      background-size: 250% 100%;
+      /* background: linear-gradient(45deg, #af7ecc,  rgb(106, 131, 214)); */
+      background: linear-gradient(45deg, #c34343, rgb(41, 32, 32));
+      background-size: 100% 100%;
       
       -webkit-animation: anim 1s ease infinite;
       -z-animation: anim 1s ease infinite;

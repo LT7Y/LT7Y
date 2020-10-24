@@ -44,26 +44,38 @@ h1, h2, h3, h4, h5, h6 {font-size:inherit; font-weight: 400}
 }
     
     ::-webkit-scrollbar-track {
-    background-color:#49538a;
+    background-color:#8a5149;
     }
 
-    
     ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 0px;
     border-radius: 7px;
-    background-color:#6079bd;
+    background-color:#ce6f6f;
     }
     
     ::-webkit-scrollbar-thumb:hover {
-    background-color:#7890dd;
+    background-color:#df7979;
     }
 
     ::-webkit-scrollbar-thumb:active {
-        background-color: rgb(129, 158, 255);
-        }
+        background-color: rgb(255, 129, 129);
+    }
         
-    ::-webkit-scrollbar{
-    width: 13px;
+    ::-webkit-scrollbar {
+    width: 1px;
+    -webkit-transition: 1s ease-in; 
+    -moz-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+    transition: 1s ease-in;
+    }
+
+    ::-webkit-scrollbar:hover {
+        width: 13px;
+        animation: 1.5s ease;
+        -webkit-transition: 1s ease-in; 
+        -moz-transition: 1s ease-in;
+        -o-transition: 1s ease-in;
+        transition: 1s ease-in;
     }
 
 .backr { 
@@ -75,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {font-size:inherit; font-weight: 400}
         z-index: -1;
       /* background: linear-gradient(45deg, #af7ecc,  rgb(106, 131, 214)); */
       background: linear-gradient(45deg, #c34343, rgb(41, 32, 32));
-      background-size: 100% 100%;
+      background-size: 120% 100%;
       
       -webkit-animation: anim 1s ease infinite;
       -z-animation: anim 1s ease infinite;

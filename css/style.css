@@ -3,12 +3,54 @@
     src: url("../fonts/OpenSans-Regular.ttf");
     font-weight: normal;
     font-style: normal;
-    }
+}
 
-.text_one {
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.textas {
     font-size: 30px;
     padding-top: 90px;
     font-family: OpenSansRegular;
+}
+
+.textas > div {
+    padding-bottom: 20px;
+}
+
+.text1 {
+    font-size: 20px;
+}
+
+.text2 {
+    font-style: italic;
+}
+
+.text3 {
+    font-weight: bold;
+}
+
+.text4 {
+    text-decoration: line-through underline;
+}
+
+.text5 {
+    text-transform: inherit;
+}
+
+.text6 {
+    letter-spacing: 20px;
+}
+
+.text7 {
+    word-spacing: 20px;
+}
+
+.text8 {
+    border-spacing: 200px;
+    white-space: nowrap;
 }
 
 .pad {
@@ -50,13 +92,12 @@
 
 @keyframes rotation {
     100% {
-            transform:rotate(360deg);
-        }
+        transform: rotate(360deg);
     }
+}
 
 @media screen and (max-width: 510px) {
     .trys {
-      font-size: 40px;
+        font-size: 40px;
     }
-  }
-
+}

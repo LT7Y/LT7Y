@@ -89,6 +89,7 @@
     transition: 1s;
     cursor: default;
     letter-spacing: 20px;
+    text-decoration: underline;
 }
 
 @keyframes rotation {

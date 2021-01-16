@@ -36,14 +36,14 @@
     z-index: 1;
     animation-name: rotation;
     font-size: 70px;
-    transition: color 1s,  letter-spacing 2s;
+    transition: color 1s, letter-spacing 2s;
     text-align: center;
 }
 
 .dis {
     margin-top: 200px;
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .discript-p {
@@ -52,17 +52,11 @@ justify-content: center;
     display: inline;
     z-index: 1;
     font-size: 40px;
-    user-select: none;   
+    user-select: none;
     transition: color 1s;
 }
 
 .discript-p:hover {
-    color: #ffffff;
-    transition: 2s;
-    cursor: not-allowed;
-}
-
-.discript-m:hover {
     color: #ffffff;
     transition: 2s;
     cursor: not-allowed;
@@ -76,31 +70,31 @@ justify-content: center;
     cursor: not-allowed;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .discript-p {
-display: none;
+        display: none;
     }
-
     .diss {
         margin-top: 200px;
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
     }
-
     .discript-m {
         color: rgb(158, 158, 158);
         font-family: Conda;
         display: inline;
         z-index: 1;
         font-size: 56px;
-        user-select: none;   
+        user-select: none;
         transition: color 1s;
         text-align: center;
     }
-
-    .welcome {
-
-        font-size: 60px;
-
+    .discript-m:hover {
+        color: #ffffff;
+        transition: 2s;
+        cursor: not-allowed;
     }
-  }
+    .welcome {
+        font-size: 60px;
+    }
+}

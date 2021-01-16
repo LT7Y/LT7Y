@@ -45,25 +45,25 @@ h1, h2, h3, h4, h5, h6 {font-size:inherit; font-weight: 400}
 }
     
     ::-webkit-scrollbar-track {
-    background-color:#8a5149;
+    background-color:#000000;
     }
 
     ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 0px;
     border-radius: 7px;
-    background-color:#ce6f6f;
+    background-color:#b6b6b6;
     }
     
     ::-webkit-scrollbar-thumb:hover {
-    background-color:#df7979;
+    background-color:#ffffff;
     }
 
     ::-webkit-scrollbar-thumb:active {
-        background-color: rgb(255, 129, 129);
+        background-color: rgb(255, 255, 255);
     }
         
     ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     display: inline;
     float: left;
     }
@@ -76,33 +76,6 @@ h1, h2, h3, h4, h5, h6 {font-size:inherit; font-weight: 400}
         top: 0px;
         position: fixed;
         z-index: -1;
-      /* background: linear-gradient(45deg, #af7ecc,  rgb(106, 131, 214)); */
-      background: linear-gradient(45deg, #ff5454, rgb(131, 121, 214));
-      background-size: 150% 200%;
-      
-      -webkit-animation: anim 1s ease infinite;
-      -z-animation: anim 1s ease infinite;
-      -o-animation: anim 1s ease infinite;
-        animation: anim 5s cubic-bezier(0.5, 0.75, 0.5, 1) infinite;
-    }
-      
-      @-webkit-keyframes anim {
-          0%{background-position:0% 82%}
-          50%{background-position:100% 19%}
-          100%{background-position:0% 82%}
-      }
-      @-moz-keyframes anim {
-          0%{background-position:0% 82%}
-          50%{background-position:100% 190%}
-          100%{background-position:0% 82%}
-      }
-      @-o-keyframes anim {
-          0%{background-position:0% 82%}
-          50%{background-position:100% 19%}
-          100%{background-position:0% 82%}
-      }
-      @keyframes anim { 
-          0%{background-position:0% 82%}
-          50%{background-position:100% 0%}
-          100%{background-position:0% 80%}
-      }
+        background: black;
+        background-size: 100% 200%;
+}

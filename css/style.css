@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "OpenSansRegular";
-    src: url("../fonts/OpenSans-Regular.ttf");
+    font-family: "BebasLight";
+    src: url("../fonts/BebasLight.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -10,96 +10,39 @@
     width: 100%;
 }
 
-.textas {
-    font-size: 30px;
-    padding-top: 90px;
-    font-family: OpenSansRegular;
-}
-
-.textas > div {
-    padding-bottom: 20px;
-}
-
-.text1 {
-    font-size: 20px;
-}
-
-.text2 {
-    font-style: italic;
-}
-
-.text3 {
-    font-weight: bold;
-}
-
-.text4 {
-    text-decoration: line-through underline;
-}
-
-.text5 {
-    text-transform: inherit;
-}
-
-.text6 {
-    letter-spacing: 20px;
-}
-
-.text7 {
-    word-spacing: 20px;
-}
-
-.text8 {
-    border-spacing: 200px;
-    white-space: nowrap;
-}
-
 .pad {
     cursor: pointer;
-    color: #000;
-    margin-top: 20000px;
+    color: rgb(95, 95, 95);
+    margin-top: 5000px;
     display: inline-block;
     position: relative;
-}
-
-.pad:active, .pad:hover {
-    color: rgb(255, 255, 255);
 }
 
 .trabl {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .trys {
-    color: black;
+    color: rgb(158, 158, 158);
     animation: 1.5s ease;
-    font-family: OpenSansRegular;
+    font-family: BebasLight;
     display: inline;
     justify-content: center;
     position: relative;
+    cursor: pointer;
     z-index: 1;
     animation-name: rotation;
-    font-size: 50px;
-    transition: color 1s,  letter-spacing 1s;
+    font-size: 70px;
+    transition: color 1s,  letter-spacing 2s;
     text-align: center;
 }
 
 .trys:hover {
-    color: #8bf1ff;
-    transition: 1s;
+    color: #ffffff;
+    transition: 2s;
     cursor: default;
     letter-spacing: 20px;
-    text-decoration: underline;
-}
-
-@keyframes rotation {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@media screen and (max-width: 510px) {
-    .trys {
-        font-size: 40px;
-    }
+    cursor: pointer;
 }

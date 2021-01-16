@@ -5,9 +5,11 @@
     font-style: normal;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
+@font-face {
+    font-family: "Conda";
+    src: url("../fonts/Conda.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 .pad {
@@ -24,14 +26,13 @@
     cursor: pointer;
 }
 
-.trys {
+.welcome {
     color: rgb(158, 158, 158);
     animation: 1.5s ease;
     font-family: BebasLight;
     display: inline;
     justify-content: center;
     position: relative;
-    cursor: pointer;
     z-index: 1;
     animation-name: rotation;
     font-size: 70px;
@@ -39,10 +40,45 @@
     text-align: center;
 }
 
-.trys:hover {
+.dis {
+    margin-top: 200px;
+display: flex;
+justify-content: center;
+}
+
+.discript {
+    color: rgb(158, 158, 158);
+    font-family: Conda;
+    display: inline;
+    z-index: 1;
+    font-size: 40px;
+    user-select: none;   
+    transition: color 1s;
+}
+
+.discript:hover {
+    color: #ffffff;
+    transition: 2s;
+    cursor: not-allowed;
+}
+
+.welcome:hover {
     color: #ffffff;
     transition: 2s;
     cursor: default;
     letter-spacing: 20px;
-    cursor: pointer;
+    cursor: not-allowed;
 }
+
+@media only screen and (max-width: 600px) {
+    .discript {
+        color: rgb(158, 158, 158);
+        font-family: Conda;
+        display: inline;
+        z-index: 1;
+        font-size: 15px;
+        user-select: none;   
+        transition: color 1s;
+        text-align: center;
+    }
+  }

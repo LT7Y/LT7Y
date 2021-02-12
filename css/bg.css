@@ -26,9 +26,9 @@ nav, footer, header, aside {
 html, body {
     height: 100%;
     width: 100%;
-    font-size: 100%;
     line-height: 1;
-    font-size: 14px;
+    background:#141415;
+    color: #141415;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -94,15 +94,4 @@ h1, h2, h3, h4, h5, h6 {
     width: 5px;
     display: inline;
     float: left;
-}
-
-.backr {
-    height: 100%;
-    width: 100%;
-    left: 0%;
-    top: 0px;
-    position: fixed;
-    z-index: -1;
-    background: black;
-    background-size: 100% 200%;
 }
